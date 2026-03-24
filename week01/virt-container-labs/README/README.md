@@ -6,6 +6,7 @@
 - Ubuntu 版本：Ubuntu 24.04.4 LTS
 - Docker 版本：Docker version 25.0.3
 - Docker Compose 版本：Docker Compose version v2.24.5
+<img width="993" height="1008" alt="04339dbf-5c0c-4360-976c-aa5fe0c2299b" src="https://github.com/user-attachments/assets/2fecfcd8-e3ba-46f5-811b-fe361957c2a1" />
 
 ## VM 資源配置驗證
 
@@ -15,13 +16,21 @@
 | 記憶體 | 4 GB | `free -h \| grep Mem` | Mem: 3.8Gi (約 4 GB) |
 | 磁碟 | 40 GB | `df -h /` | /dev/sda3 39G (約 40 GB) |
 | Hypervisor | VMware | `lscpu \| grep Hypervisor` | Hypervisor vendor: VMware |
+<img width="993" height="1008" alt="螢幕擷取畫面 2026-03-24 180303" src="https://github.com/user-attachments/assets/27352f19-9279-4c83-9003-2870b77f5983" />
+<img width="993" height="1008" alt="螢幕擷取畫面 2026-03-24 180352" src="https://github.com/user-attachments/assets/9addc669-4786-4f03-887c-1048549e08f6" />
 
 ## 四層驗收證據
 - [x ] ① Repository：`cat /etc/apt/sources.list.d/docker.list` 輸出
 - [x ] ② Engine：`dpkg -l | grep docker-ce` 輸出
 - [ x] ③ Daemon：`sudo systemctl status docker` 顯示 active
+<img width="993" height="1008" alt="螢幕擷取畫面 2026-03-24 180434" src="https://github.com/user-attachments/assets/34cbe50c-2c75-446b-9ad6-4b2c2f8b919b" />
 - [ x] ④ 端到端：`sudo docker run hello-world` 成功輸出
+- <img width="993" height="1008" alt="螢幕擷取畫面 2026-03-24 180451" src="https://github.com/user-attachments/assets/0d68e793-17c7-466a-b9b4-8737511a6b01" />
 - [ x] Compose：`docker compose version` 可執行
+- <img width="993" height="1008" alt="螢幕擷取畫面 2026-03-24 180510" src="https://github.com/user-attachments/assets/5cb2327c-cd78-41f2-b68f-d6636fa2cca4" />
+
+<img width="987" height="746" alt="螢幕擷取畫面 2026-03-24 180554" src="https://github.com/user-attachments/assets/ac1c7ff6-2f53-4c7e-9936-08a9f0977683" />
+<img width="993" height="1008" alt="螢幕擷取畫面 2026-03-24 181035" src="https://github.com/user-attachments/assets/ada87e05-351b-43e0-bfd3-b54579e62a13" />
 
 ## 容器操作紀錄
 - [x ] nginx：`sudo docker run -d -p 8080:80 nginx` + `curl localhost:8080` 輸出
@@ -79,3 +88,4 @@ sudo docker run hello-world # 提示 command not found
 ## 設計決策
 （說明本週至少 1 個技術選擇與取捨）
 選擇在安裝 Docker 前先建立一個 clean-baseline 快照。 考量到 Ubuntu 24.04 是較新的版本，安裝 Docker 軟體源（GPG Key）的過程較容易因網路或版本差異出錯。建立此快照可以讓我即使在安裝過程中失敗，也能在 10 秒內回到純淨狀態重新嘗試，而不需浪費時間重裝整個作業系統。
+
