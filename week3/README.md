@@ -83,3 +83,18 @@ Connection refused：發生在目標主機存在，但指定的 服務未啟動 
 （說明本週至少 1 個技術選擇與取捨，例如：為什麼 db 允許 bastion 直連而不是只允許從 app 跳？）在本次設計中，我選擇讓 db 允許 bastion 直連。
 
 理由：雖然從安全角度「只允許 app 連 db」最嚴謹，但實務上系統管理員（管理跳板機的人）需要獨立的維護通道。如果 app 層因為更新失敗或配置錯誤導致無法登入，透過 bastion 直接連向 db 進行緊急維護或備份，能提供更好的管理彈性
+
+<img width="995" height="999" alt="螢幕擷取畫面 2026-04-16 150349" src="https://github.com/user-attachments/assets/38abc589-a4b5-472b-8225-b65580e22439" />
+<img width="995" height="999" alt="螢幕擷取畫面 2026-04-16 145752" src="https://github.com/user-attachments/assets/fc9150e8-12a6-421b-8b52-4a93ec64223c" />
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-16 143743" src="https://github.com/user-attachments/assets/145f3d2e-f9c6-4dcf-9dc7-1aed8ab47c8e" />
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-16 143730" src="https://github.com/user-attachments/assets/946de0a0-a50a-447a-9ae8-5f1134cc7539" />
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-16 143605" src="https://github.com/user-attachments/assets/eb751dbf-bd6a-4582-bc91-4969b597602f" />
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-16 143557" src="https://github.com/user-attachments/assets/862f94db-5b70-40c5-8a41-0ac24a6e3cea" />
+<img width="1003" height="999" alt="螢幕擷取畫面 2026-04-16 152018" src="https://github.com/user-attachments/assets/1d8fe671-04ba-41d7-9bbc-719f83d0be60" />
+<img width="1003" height="999" alt="螢幕擷取畫面 2026-04-16 151511" src="https://github.com/user-attachments/assets/f719a48b-3fea-4263-8a1d-61543af36366" />
+<img width="1003" height="999" alt="螢幕擷取畫面 2026-04-16 151358" src="https://github.com/user-attachments/assets/eb5b6098-c354-442d-9eb1-dbc430a69d24" />
+<img width="995" height="999" alt="螢幕擷取畫面 2026-04-16 151006" src="https://github.com/user-attachments/assets/dc1d48f5-1823-452e-be89-74fa7ec7d6f5" />
+<img width="995" height="999" alt="螢幕擷取畫面 2026-04-16 150852" src="https://github.com/user-attachments/assets/2176cc2a-5b2f-45ae-bf2c-3798f058a3fd" />
+<img width="964" height="1017" alt="螢幕擷取畫面 2026-04-16 150848" src="https://github.com/user-attachments/assets/b3f2841d-612c-4ca4-88b8-92229ddaa98d" />
+<img width="995" height="999" alt="螢幕擷取畫面 2026-04-16 150528" src="https://github.com/user-attachments/assets/53eaf654-7b00-4980-a33e-e3bc444585a1" />
+
