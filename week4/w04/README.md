@@ -109,3 +109,9 @@ CLI 是我們輸入指令的工具，Daemon 是背景執行的服務。當我停
 
 替代方案評估：
 若要追求更高安全性，技術上可選擇 Rootless Docker 模式。該模式不依賴 root 權限啟動 Daemon，能有效避免容器逃逸（Container Escape）後威脅宿主機安全，但在網路設定與效能上會存在較多限制。在本教學環境中，為了學習標準的 FHS 結構與 Socket 通訊原理，我們選擇了傳統的群組模式
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-23 152156" src="https://github.com/user-attachments/assets/98db39c8-bde5-4caa-95a1-f18a10f65d38" />
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-23 152038" src="https://github.com/user-attachments/assets/6c706219-c03c-4bea-af12-264193b91768" />
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-23 151902" src="https://github.com/user-attachments/assets/cf2c4142-614e-45ca-8744-f77594eee86c" />
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-23 151851" src="https://github.com/user-attachments/assets/e38783ec-3aa4-4b98-a4bc-4384cdcc92a3" />
+<img width="960" height="1008" alt="螢幕擷取畫面 2026-04-23 151348" src="https://github.com/user-attachments/assets/69ee3ba0-c86d-424b-b5f0-6adf75acf845" />
+<img width="947" height="1008" alt="螢幕擷取畫面 2026-04-23 134859" src="https://github.com/user-attachments/assets/bb98b93c-95f4-473f-b824-fbd17e773272" />
